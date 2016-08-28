@@ -1,0 +1,206 @@
+/* this is used to strict the button and text in one line only*/
+.one-line > div{
+  white-space: nowrap;
+}
+
+.one-line > div > div{
+  white-space: normal;
+}
+/* this is for the row height*/
+.row.question-row{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.row.result-row{
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.result-row.small{
+	font-size: 12px;
+}
+/* this is used to center vertically*/
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    float: none;
+}
+/* stripped background*/
+div.stripped-row:nth-child(even) {
+	background-color: #F1F1F1;
+}
+
+div.stripped-row:nth-child(odd) {
+	background-color: white;
+}
+
+.input-sm.month-question{
+   border: 1px solid #CCC;
+   border-radius: 8px;
+   width: 92px;
+   height: 27px;
+}
+.input-sm.mortgage-question{
+   border: 1px solid #CCC;
+   border-radius: 8px;
+   width: 62px;
+   height: 27px;	
+}
+
+.form-control{
+	width: 192px;
+}
+
+.header-title{
+	font-size: 33px;
+}
+
+.header-subtitle{
+	font-size: 18px;
+}
+
+.container-header{
+	padding: 5px 0px;
+	margin-right: -30px;
+	margin-left: -30px;
+	height:140px;
+}
+.container-header span{
+	padding-right: 5px;
+}
+
+.container-printer{
+	margin-right: 0;
+	margin-left: 0;
+	height:46px;
+	border-top: 1px solid #CCC;
+}
+
+.container-head{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.container-btn-1 {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-style: none;
+  background-color: transparent;
+}
+
+.container-range{
+  margin-left: 0px;
+  display: inline-block;
+}
+.container-text-1 {
+  display: inline-block;
+  width: 60%;
+  min-width: 150px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-style: none;
+  background-color: transparent;
+  font-size:14px;
+}
+
+/*this is for result table*/
+.container-banner{
+	display: table;
+	margin: 0 auto;
+}
+
+.banner-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    line-height: 33px;
+}
+
+.summary-text{
+    text-align: center;
+    height: auto;
+    display: table-cell;
+    padding: 4px;
+    font-size: 16px;
+}
+.summary-num{
+	text-align: center;
+    height: auto;
+    display: table-cell;
+    font-size: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #D81E05;
+}
+.descrip-lead{
+	font-size: 100%;
+	font-weight: bold;
+	margin-left: 15px;
+}
+.checkbox{
+	padding-left: 15px;
+}
+.btn.btn-infomation{
+	width: 116px;
+    height: 26px;
+    border: 1px solid #D0D0D0;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 0.8;
+    color: #D81E05;
+    text-align: center;
+}
+.btn-padding{
+	padding: 42px 30px 0px 30px;
+}
+.btn.btn-printer{
+	border:0;
+	background-color: transparent;
+	color: #666666;
+	font-weight: bold;
+	padding-right: 0px;
+	padding-top: 20px;
+}
+
+.homeIcon {
+    width: 67px;
+    height: 67px;
+    background: url('/img/Scotia_WhatCanIAfford_spriteboard.png') 0px -145px;
+    float: right;
+}
+.homeIcon-padding{
+	padding: 8px 23px 8px 8px;
+
+}
+.foot-note{
+	font-size: 11px;
+	margin-bottom: 15px;
+}
+/*handle of UI slider*/
+.ui-slider .ui-slider-handle{
+    width:27px; 
+    height:25px; 
+    background:url('/img/slider_dragger.png') no-repeat; overflow: hidden; 
+    position:absolute;
+    top: -8px;
+    border-style:none; 
+}
+
+.ui-widget.ui-widget-content {
+    border-radius:10px; 
+    border:none;
+    background: #ffffff url('/img/slider_bar.png');
+    background-size: cover;
+}

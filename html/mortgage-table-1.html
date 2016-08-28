@@ -1,0 +1,29 @@
+
+<div class="container-fluid">
+  <div class="container-head">
+    <span class="title-num">2</span>
+    <h4>Enter Your Mortgage Information:</h4>  
+  </div>
+  <div class="row one-line stripped-row question-row" ng-repeat='MortgageInfo in MortgageTable'>
+    <div class="col-xs-4 col-sm-10 col-md-4"> 
+      <button type="button" class="container-btn-1 vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+      <div class="container-text-1 vcenter">{{MortgageInfo.text}}</div>
+    </div>
+
+    <div class="col-xs-3 col-sm-1 col-md-4 text-middle col-sm-pull-6 col-md-pull-0" ng-if="MortgageInfo.text == 'Product'"> 
+      <select class="form-control">
+        <option>options</option>
+      </select>          
+    </div> 
+
+    <div class="col-xs-4 col-sm-5  col-md-4 container-range vcenter" ng-if="MortgageInfo.text != 'Product'"> 
+      <div ng-slider-one model="MortgageInfo.value"></div>
+    </div>
+
+    <div class="col-xs-3 col-sm-6 col-md-3 xs-push vcenter" ng-if="MortgageInfo.text != 'Product'">  
+        <input class='input-sm mortgage-question' type="text" name="input" ng-model="MortgageInfo.value">
+        <span>{{MortgageInfo.unit}}</span>
+    </div> 
+
+  </div>
+</div>

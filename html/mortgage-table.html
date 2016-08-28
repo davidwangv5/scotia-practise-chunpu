@@ -1,0 +1,47 @@
+
+  <div class="container-head">
+    <span class="title-num">2</span>
+    <h4>Enter Your Mortgage Information:</h4>   
+  </div>
+
+  <table class="table table-responsive table-striped">
+    <tbody>
+      <tr ng-repeat='MortgageInfo in MortgageTable'>
+        <td>
+
+          <div class="row">
+            <div class="col-xs-5 col-sm-8 col-md-4 less-padding"> 
+                <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+                <div class="container-text vcenter">{{MortgageInfo.text}}</div>
+            </div>
+
+            <div class="col-xs-3 col-sm-4 col-md-4 text-middle" ng-if="MortgageInfo.text == 'Product'"> 
+              <select class="form-control">
+                <option>options</option>
+              </select>          
+            </div>         
+
+            <div class="col-xs-3 col-sm-5  col-md-4 less-padding vcenter container-range" ng-if="MortgageInfo.text != 'Product'"> 
+              <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value"/>
+            </div>
+
+            <div class="col-xs-3 col-sm-6 col-md-3 less-padding text-right vcenter" ng-if="MortgageInfo.text != 'Product'"> 
+                <span>&#36;</span> 
+                <input class='input-sm' type="text" name="input" ng-model="MortgageInfo.value">
+            </div> 
+
+          </div>
+
+        <!--  <div class="hidden-xs col-sm-6 col-md-4 text-middle vcenter" ng-if="MortgageInfo.text != 'Product'"> 
+            <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value"/>
+          </div>
+
+          <div class="col-xs-6 col-sm-5 col-md-3 text-right" ng-if="MortgageInfo.text != 'Product'"> 
+              <span>&#36;</span> 
+              <input class='input-sm' type="text" name="input" ng-model="MortgageInfo.value">
+          </div>-->                     
+
+        </td>
+      </tr>                         
+    </tbody>
+  </table>

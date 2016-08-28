@@ -1,0 +1,30 @@
+  <div class="row">
+    <div class="col-xs-12 " style="height:100px;background-color:blue;">
+    </div>
+  </div>
+
+
+
+    <table class="table table-responsive table-striped">
+    <tbody>
+      <tr ng-repeat='MonthInfo in MonthTable'>
+        <td class="col-xs-6 col-sm-12 col-md-4">
+          <button type="button" class="btn btn-default btn-xs btn-round btn-danger ">i</button> 
+          <span>{{MonthInfo.text}}</span> 
+        </td>
+        <td class="col-sm-6 col-md-5 hidden-xs text-center"> 
+          <input type="range" min="0" max="50" value="MonthInfo.value" step="1" ng-model="MonthInfo.value"/>
+        </td>
+        <td class="col-xs-6 col-sm-12 col-md-3 text-right"> 
+            <span>&#36;</span> 
+            <input class='input-sm' type="text" name="input" ng-model="MonthInfo.value">
+        </td>
+      </tr>		      				      	
+    </tbody>
+  </table>
+
+
+          <div class="col-xs-6 col-sm-12 col-md-4 "> 
+            <button type="button" class="box1"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+            <div class="box1">{{MortgageInfo.text}}</div>
+          </div>

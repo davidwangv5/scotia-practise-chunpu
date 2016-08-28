@@ -1,0 +1,79 @@
+/* app css stylesheet */
+h4{
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 18px;
+  font-weight:normal;
+  color: red;
+  line-height: 1.33;
+  border-radius: 6px;
+  margin: 0;
+}
+span.title-num{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px #888;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 5px;
+  text-align: center;
+  margin: auto;
+  background-color: red;
+  color: white;
+}
+div.less-padding{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.input-sm{
+   border: 1px solid #CCC;
+   border-radius: 8px;
+   width: 80px;
+}
+
+
+.scotia-color{
+  color: red;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.container-head{
+  padding-bottom: 5px;
+}
+
+.container-btn {
+  margin-left: 15px;
+  margin-right: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-style: none;
+  background-color: transparent;
+}
+
+.container-range{
+  margin-left: 15px;
+}
+
+.container-text {
+  display: inline-block;
+  width: 60%;
+  min-width: 150px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-style: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+    .container-range {
+        display: none !important;
+    }
+}

@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="container-head">
+    <span class="title-num">1</span>
+    <h4>Enter Your Monthly Information:</h4>   
+  </div>
+  <div class="row one-line stripped-row question-row" ng-repeat='MonthInfo in MonthTable'>
+    <div class="col-xs-4 col-sm-12 col-md-4"> 
+      <button type="button" class="container-btn-1 vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+      <div class="container-text-1 vcenter">{{MonthInfo.text}}</div>
+    </div>
+
+    <div class="col-xs-4 col-sm-5  col-md-4 container-range vcenter"> 
+      <div ng-slider-one model="MonthInfo.value"></div>
+    </div>
+
+    <div class="col-xs-3 col-sm-6 col-md-3 text-right xs-push vcenter"> 
+        <span>&#36;</span> 
+        <input class='input-sm month-question' type="text" name="input" ng-model="MonthInfo.value">
+    </div> 
+
+  </div>
+</div>
+ 
+                  

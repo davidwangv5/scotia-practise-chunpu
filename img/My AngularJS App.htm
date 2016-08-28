@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8000/ -->
+<html lang="en" ng-app="myApp" class="no-js ng-scope"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./My AngularJS App_files/bootstrap.css">
+  <link rel="stylesheet" href="./My AngularJS App_files/font-awesome.min.css">
+  <link rel="stylesheet" href="./My AngularJS App_files/app.css">
+  <script src="./My AngularJS App_files/jquery.js"></script>
+  <script src="./My AngularJS App_files/angular.js"></script>
+  <script src="./My AngularJS App_files/app.js"></script>
+
+</head>
+<body>
+  <!-- ngInclude: 'html/calculator.html' --><div ng-include="&#39;html/calculator.html&#39;" ng-controller="MasterCtrl" class="ng-scope"><div class="container ng-scope">
+  <div class="row">
+    <div class="col-xs-12 " style="height:100px;background-color:blue;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-sm-7">
+      <div class="row">
+        <!-- ngInclude: 'html/month-table.html' --><div class="col-md-12 ng-scope" style="background-color:white;" ng-include="&#39;html/month-table.html&#39;">  <div class="container-head ng-scope">
+    <span class="title-num">1</span>
+    <h4>Enter Your Monthly Information:</h4>   
+  </div>
+
+  <table class="table table-responsive table-striped ng-scope">
+    <tbody>
+      <!-- ngRepeat: MonthInfo in MonthTable --><tr ng-repeat="MonthInfo in MonthTable" class="ng-scope">
+        <td>
+          <div class="row">
+            <div class="col-xs-5 col-sm-12 col-md-4 less-padding"> 
+              <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+              <div class="container-text vcenter ng-binding">Gross Income</div>
+            </div>
+
+           <!-- <div class="col-xs-1 col-sm-1 col-md-1 less-distance"> 
+              <button type="button" class="box1"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="col-xs-5 col-sm-11 col-md-3"> 
+              {{MonthInfo.text}}
+            </div>-->
+
+            <div class="col-xs-3 col-sm-5  col-md-4 less-padding vcenter container-range"> 
+              <input type="range" min="0" max="50" value="MonthInfo.value" step="1" ng-model="MonthInfo.value" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+            </div>
+
+            <div class="col-xs-3 col-sm-6 col-md-3 less-padding text-right vcenter"> 
+                <span>$</span> 
+                <input class="input-sm ng-pristine ng-untouched ng-valid ng-not-empty" type="text" name="input" ng-model="MonthInfo.value">
+            </div> 
+
+          </div>                     
+
+        </td>
+      </tr><!-- end ngRepeat: MonthInfo in MonthTable --><tr ng-repeat="MonthInfo in MonthTable" class="ng-scope">
+        <td>
+          <div class="row">
+            <div class="col-xs-5 col-sm-12 col-md-4 less-padding"> 
+              <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+              <div class="container-text vcenter ng-binding">Property Taxes</div>
+            </div>
+
+           <!-- <div class="col-xs-1 col-sm-1 col-md-1 less-distance"> 
+              <button type="button" class="box1"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="col-xs-5 col-sm-11 col-md-3"> 
+              {{MonthInfo.text}}
+            </div>-->
+
+            <div class="col-xs-3 col-sm-5  col-md-4 less-padding vcenter container-range"> 
+              <input type="range" min="0" max="50" value="MonthInfo.value" step="1" ng-model="MonthInfo.value" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+            </div>
+
+            <div class="col-xs-3 col-sm-6 col-md-3 less-padding text-right vcenter"> 
+                <span>$</span> 
+                <input class="input-sm ng-pristine ng-untouched ng-valid ng-not-empty" type="text" name="input" ng-model="MonthInfo.value">
+            </div> 
+
+          </div>                     
+
+        </td>
+      </tr><!-- end ngRepeat: MonthInfo in MonthTable --><tr ng-repeat="MonthInfo in MonthTable" class="ng-scope">
+        <td>
+          <div class="row">
+            <div class="col-xs-5 col-sm-12 col-md-4 less-padding"> 
+              <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+              <div class="container-text vcenter ng-binding"> Condominium Fees</div>
+            </div>
+
+           <!-- <div class="col-xs-1 col-sm-1 col-md-1 less-distance"> 
+              <button type="button" class="box1"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="col-xs-5 col-sm-11 col-md-3"> 
+              {{MonthInfo.text}}
+            </div>-->
+
+            <div class="col-xs-3 col-sm-5  col-md-4 less-padding vcenter container-range"> 
+              <input type="range" min="0" max="50" value="MonthInfo.value" step="1" ng-model="MonthInfo.value" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+            </div>
+
+            <div class="col-xs-3 col-sm-6 col-md-3 less-padding text-right vcenter"> 
+                <span>$</span> 
+                <input class="input-sm ng-pristine ng-untouched ng-valid ng-not-empty" type="text" name="input" ng-model="MonthInfo.value">
+            </div> 
+
+          </div>                     
+
+        </td>
+      </tr><!-- end ngRepeat: MonthInfo in MonthTable --><tr ng-repeat="MonthInfo in MonthTable" class="ng-scope">
+        <td>
+          <div class="row">
+            <div class="col-xs-5 col-sm-12 col-md-4 less-padding"> 
+              <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+              <div class="container-text vcenter ng-binding"> Heating Costs</div>
+            </div>
+
+           <!-- <div class="col-xs-1 col-sm-1 col-md-1 less-distance"> 
+              <button type="button" class="box1"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="col-xs-5 col-sm-11 col-md-3"> 
+              {{MonthInfo.text}}
+            </div>-->
+
+            <div class="col-xs-3 col-sm-5  col-md-4 less-padding vcenter container-range"> 
+              <input type="range" min="0" max="50" value="MonthInfo.value" step="1" ng-model="MonthInfo.value" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+            </div>
+
+            <div class="col-xs-3 col-sm-6 col-md-3 less-padding text-right vcenter"> 
+                <span>$</span> 
+                <input class="input-sm ng-pristine ng-untouched ng-valid ng-not-empty" type="text" name="input" ng-model="MonthInfo.value">
+            </div> 
+
+          </div>                     
+
+        </td>
+      </tr><!-- end ngRepeat: MonthInfo in MonthTable --><tr ng-repeat="MonthInfo in MonthTable" class="ng-scope">
+        <td>
+          <div class="row">
+            <div class="col-xs-5 col-sm-12 col-md-4 less-padding"> 
+              <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+              <div class="container-text vcenter ng-binding">Borrowing Payments (e.g. credit cards, loans)</div>
+            </div>
+
+           <!-- <div class="col-xs-1 col-sm-1 col-md-1 less-distance"> 
+              <button type="button" class="box1"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="col-xs-5 col-sm-11 col-md-3"> 
+              {{MonthInfo.text}}
+            </div>-->
+
+            <div class="col-xs-3 col-sm-5  col-md-4 less-padding vcenter container-range"> 
+              <input type="range" min="0" max="50" value="MonthInfo.value" step="1" ng-model="MonthInfo.value" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+            </div>
+
+            <div class="col-xs-3 col-sm-6 col-md-3 less-padding text-right vcenter"> 
+                <span>$</span> 
+                <input class="input-sm ng-pristine ng-untouched ng-valid ng-not-empty" type="text" name="input" ng-model="MonthInfo.value">
+            </div> 
+
+          </div>                     
+
+        </td>
+      </tr><!-- end ngRepeat: MonthInfo in MonthTable -->                         
+    </tbody>
+  </table></div>
+        <!-- ngInclude: 'html/mortgage-table.html' --><div class="col-md-12 ng-scope" style="background-color:white;" ng-include="&#39;html/mortgage-table.html&#39;">
+  <div class="container-head ng-scope">
+    <span class="title-num">2</span>
+    <h4>Enter Your Mortgage Information:</h4>   
+  </div>
+
+  <table class="table table-responsive table-striped ng-scope">
+    <tbody>
+      <!-- ngRepeat: MortgageInfo in MortgageTable --><tr ng-repeat="MortgageInfo in MortgageTable" class="ng-scope">
+        <td>
+
+          <div class="row">
+            <div class="col-xs-5 col-sm-8 col-md-4 less-padding"> 
+                <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+                <div class="container-text vcenter ng-binding">Product</div>
+            </div>
+
+            <!-- ngIf: MortgageInfo.text == 'Product' --><div class="col-xs-3 col-sm-4 col-md-4 text-middle ng-scope" ng-if="MortgageInfo.text == &#39;Product&#39;"> 
+              <select class="form-control">
+                <option value="options">options</option>
+              </select>          
+            </div><!-- end ngIf: MortgageInfo.text == 'Product' -->         
+
+            <!-- ngIf: MortgageInfo.text != 'Product' -->
+
+            <!-- ngIf: MortgageInfo.text != 'Product' --> 
+
+          </div>
+
+        <!--  <div class="hidden-xs col-sm-6 col-md-4 text-middle vcenter" ng-if="MortgageInfo.text != 'Product'"> 
+            <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value"/>
+          </div>
+
+          <div class="col-xs-6 col-sm-5 col-md-3 text-right" ng-if="MortgageInfo.text != 'Product'"> 
+              <span>&#36;</span> 
+              <input class='input-sm' type="text" name="input" ng-model="MortgageInfo.value">
+          </div>-->                     
+
+        </td>
+      </tr><!-- end ngRepeat: MortgageInfo in MortgageTable --><tr ng-repeat="MortgageInfo in MortgageTable" class="ng-scope">
+        <td>
+
+          <div class="row">
+            <div class="col-xs-5 col-sm-8 col-md-4 less-padding"> 
+                <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+                <div class="container-text vcenter ng-binding">Interest Rate</div>
+            </div>
+
+            <!-- ngIf: MortgageInfo.text == 'Product' -->         
+
+            <!-- ngIf: MortgageInfo.text != 'Product' --><div class="col-xs-3 col-sm-5  col-md-4 less-padding vcenter container-range ng-scope" ng-if="MortgageInfo.text != &#39;Product&#39;"> 
+              <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+            </div><!-- end ngIf: MortgageInfo.text != 'Product' -->
+
+            <!-- ngIf: MortgageInfo.text != 'Product' --><div class="col-xs-3 col-sm-6 col-md-3 less-padding text-right vcenter ng-scope" ng-if="MortgageInfo.text != &#39;Product&#39;"> 
+                <span>$</span> 
+                <input class="input-sm ng-pristine ng-untouched ng-valid ng-not-empty" type="text" name="input" ng-model="MortgageInfo.value">
+            </div><!-- end ngIf: MortgageInfo.text != 'Product' --> 
+
+          </div>
+
+        <!--  <div class="hidden-xs col-sm-6 col-md-4 text-middle vcenter" ng-if="MortgageInfo.text != 'Product'"> 
+            <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value"/>
+          </div>
+
+          <div class="col-xs-6 col-sm-5 col-md-3 text-right" ng-if="MortgageInfo.text != 'Product'"> 
+              <span>&#36;</span> 
+              <input class='input-sm' type="text" name="input" ng-model="MortgageInfo.value">
+          </div>-->                     
+
+        </td>
+      </tr><!-- end ngRepeat: MortgageInfo in MortgageTable --><tr ng-repeat="MortgageInfo in MortgageTable" class="ng-scope">
+        <td>
+
+          <div class="row">
+            <div class="col-xs-5 col-sm-8 col-md-4 less-padding"> 
+                <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+                <div class="container-text vcenter ng-binding">Amortization</div>
+            </div>
+
+            <!-- ngIf: MortgageInfo.text == 'Product' -->         
+
+            <!-- ngIf: MortgageInfo.text != 'Product' --><div class="col-xs-3 col-sm-5  col-md-4 less-padding vcenter container-range ng-scope" ng-if="MortgageInfo.text != &#39;Product&#39;"> 
+              <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+            </div><!-- end ngIf: MortgageInfo.text != 'Product' -->
+
+            <!-- ngIf: MortgageInfo.text != 'Product' --><div class="col-xs-3 col-sm-6 col-md-3 less-padding text-right vcenter ng-scope" ng-if="MortgageInfo.text != &#39;Product&#39;"> 
+                <span>$</span> 
+                <input class="input-sm ng-pristine ng-untouched ng-valid ng-not-empty" type="text" name="input" ng-model="MortgageInfo.value">
+            </div><!-- end ngIf: MortgageInfo.text != 'Product' --> 
+
+          </div>
+
+        <!--  <div class="hidden-xs col-sm-6 col-md-4 text-middle vcenter" ng-if="MortgageInfo.text != 'Product'"> 
+            <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value"/>
+          </div>
+
+          <div class="col-xs-6 col-sm-5 col-md-3 text-right" ng-if="MortgageInfo.text != 'Product'"> 
+              <span>&#36;</span> 
+              <input class='input-sm' type="text" name="input" ng-model="MortgageInfo.value">
+          </div>-->                     
+
+        </td>
+      </tr><!-- end ngRepeat: MortgageInfo in MortgageTable -->                         
+    </tbody>
+  </table></div>
+      </div>
+    </div>
+    <!-- ngInclude: 'html/result-table.html' --><div class="col-md-4 col-sm-5 ng-scope" style="background-color:white;" ng-include="&#39;html/result-table.html&#39;">  <div class="row ng-scope">
+    <div class="col-xs-12 ">
+      <img class="img-responsive center-block" src="./My AngularJS App_files/photo.png">
+    </div>
+  </div>
+  
+
+  <table class="table table-responsive table-striped ng-scope">
+    <tbody>
+      <!-- ngRepeat: MortgageInfo in MortgageTable --><tr ng-repeat="MortgageInfo in MortgageTable" class="ng-scope">
+        <td>
+
+          <div class="row">
+            <div class="col-xs-5 col-sm-8 col-md-4 less-padding"> 
+                <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+                <div class="container-text vcenter ng-binding">Product</div>
+            </div>
+
+            <!-- ngIf: MortgageInfo.text == 'Product' --><div class="col-xs-3 col-sm-4 col-md-4 text-middle ng-scope" ng-if="MortgageInfo.text == &#39;Product&#39;"> 
+              <select class="form-control">
+                <option value="options">options</option>
+              </select>          
+            </div><!-- end ngIf: MortgageInfo.text == 'Product' -->         
+
+            <!-- ngIf: MortgageInfo.text != 'Product' -->
+
+            <!-- ngIf: MortgageInfo.text != 'Product' --> 
+
+          </div>
+
+        <!--  <div class="hidden-xs col-sm-6 col-md-4 text-middle vcenter" ng-if="MortgageInfo.text != 'Product'"> 
+            <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value"/>
+          </div>
+
+          <div class="col-xs-6 col-sm-5 col-md-3 text-right" ng-if="MortgageInfo.text != 'Product'"> 
+              <span>&#36;</span> 
+              <input class='input-sm' type="text" name="input" ng-model="MortgageInfo.value">
+          </div>-->                     
+
+        </td>
+      </tr><!-- end ngRepeat: MortgageInfo in MortgageTable --><tr ng-repeat="MortgageInfo in MortgageTable" class="ng-scope">
+        <td>
+
+          <div class="row">
+            <div class="col-xs-5 col-sm-8 col-md-4 less-padding"> 
+                <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+                <div class="container-text vcenter ng-binding">Interest Rate</div>
+            </div>
+
+            <!-- ngIf: MortgageInfo.text == 'Product' -->         
+
+            <!-- ngIf: MortgageInfo.text != 'Product' --><div class="col-xs-3 col-sm-5  col-md-4 less-padding vcenter container-range ng-scope" ng-if="MortgageInfo.text != &#39;Product&#39;"> 
+              <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+            </div><!-- end ngIf: MortgageInfo.text != 'Product' -->
+
+            <!-- ngIf: MortgageInfo.text != 'Product' --><div class="col-xs-3 col-sm-6 col-md-3 less-padding text-right vcenter ng-scope" ng-if="MortgageInfo.text != &#39;Product&#39;"> 
+                <span>$</span> 
+                <input class="input-sm ng-pristine ng-untouched ng-valid ng-not-empty" type="text" name="input" ng-model="MortgageInfo.value">
+            </div><!-- end ngIf: MortgageInfo.text != 'Product' --> 
+
+          </div>
+
+        <!--  <div class="hidden-xs col-sm-6 col-md-4 text-middle vcenter" ng-if="MortgageInfo.text != 'Product'"> 
+            <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value"/>
+          </div>
+
+          <div class="col-xs-6 col-sm-5 col-md-3 text-right" ng-if="MortgageInfo.text != 'Product'"> 
+              <span>&#36;</span> 
+              <input class='input-sm' type="text" name="input" ng-model="MortgageInfo.value">
+          </div>-->                     
+
+        </td>
+      </tr><!-- end ngRepeat: MortgageInfo in MortgageTable --><tr ng-repeat="MortgageInfo in MortgageTable" class="ng-scope">
+        <td>
+
+          <div class="row">
+            <div class="col-xs-5 col-sm-8 col-md-4 less-padding"> 
+                <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+                <div class="container-text vcenter ng-binding">Amortization</div>
+            </div>
+
+            <!-- ngIf: MortgageInfo.text == 'Product' -->         
+
+            <!-- ngIf: MortgageInfo.text != 'Product' --><div class="col-xs-3 col-sm-5  col-md-4 less-padding vcenter container-range ng-scope" ng-if="MortgageInfo.text != &#39;Product&#39;"> 
+              <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+            </div><!-- end ngIf: MortgageInfo.text != 'Product' -->
+
+            <!-- ngIf: MortgageInfo.text != 'Product' --><div class="col-xs-3 col-sm-6 col-md-3 less-padding text-right vcenter ng-scope" ng-if="MortgageInfo.text != &#39;Product&#39;"> 
+                <span>$</span> 
+                <input class="input-sm ng-pristine ng-untouched ng-valid ng-not-empty" type="text" name="input" ng-model="MortgageInfo.value">
+            </div><!-- end ngIf: MortgageInfo.text != 'Product' --> 
+
+          </div>
+
+        <!--  <div class="hidden-xs col-sm-6 col-md-4 text-middle vcenter" ng-if="MortgageInfo.text != 'Product'"> 
+            <input type="range" min="0" max="50" value="MortgageInfo.value" step="1" ng-model="MortgageInfo.value"/>
+          </div>
+
+          <div class="col-xs-6 col-sm-5 col-md-3 text-right" ng-if="MortgageInfo.text != 'Product'"> 
+              <span>&#36;</span> 
+              <input class='input-sm' type="text" name="input" ng-model="MortgageInfo.value">
+          </div>-->                     
+
+        </td>
+      </tr><!-- end ngRepeat: MortgageInfo in MortgageTable -->                         
+    </tbody>
+  </table></div>
+  </div>
+
+</div>
+
+<!--<div class="container">
+	<div class="row">
+	<div class="col-md-8">
+	  .col-md-8
+	  <div class="row">
+	    <div class="col-md-6">.col-md-6</div>
+	    <div class="col-md-6">.col-md-6</div>
+	  </div>
+	  <div class="row">
+	    <div class="col-md-6">.col-md-6--</div>
+	    <div class="col-md-6">.col-md-6==</div>
+	  </div>	  
+	</div>
+	<div class="col-md-4">.col-md-4</div>
+	</div>
+</div>--></div>
+
+
+
+</body></html>

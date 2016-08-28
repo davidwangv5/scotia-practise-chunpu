@@ -1,0 +1,38 @@
+  <div class="container-head">
+    <span class="title-num">1</span>
+    <h4>Enter Your Monthly Information:</h4>   
+  </div>
+
+  <table class="table table-responsive table-striped">
+    <tbody>
+      <tr ng-repeat='MonthInfo in MonthTable'>
+        <td>
+          <div class="row">
+            <div class="col-xs-4 col-sm-12 col-md-4"> 
+              <button type="button" class="container-btn vcenter"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+              <div class="container-text vcenter">{{MonthInfo.text}}</div>
+            </div>
+
+           <!-- <div class="col-xs-1 col-sm-1 col-md-1 less-distance"> 
+              <button type="button" class="box1"><i class="fa fa-info-circle fa-lg scotia-color" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="col-xs-5 col-sm-11 col-md-3"> 
+              {{MonthInfo.text}}
+            </div>-->
+
+            <div class="col-xs-4 col-sm-5  col-md-4 vcenter container-range"> 
+              <input type="range" min="0" max="50" value="MonthInfo.value" step="1" ng-model="MonthInfo.value"/>
+            </div>
+
+            <div class="col-xs-3 col-sm-6 col-md-3 text-right vcenter"> 
+                <span>&#36;</span> 
+                <input class='input-sm' type="text" name="input" ng-model="MonthInfo.value">
+            </div> 
+
+          </div>                     
+
+        </td>
+      </tr>                         
+    </tbody>
+  </table>

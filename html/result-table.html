@@ -1,0 +1,71 @@
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="container-img"></div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="container-banner">
+        <div class="banner-text">You can afford a home with...</div>
+      </div>
+  </div>
+
+  <div id="summary-board">
+    <div class="row">
+      <div class="summary-text col-xs-12">A maximum purchase price of:</div>
+      <div class="summary-num col-xs-12">$279,517.18</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">   <hr> </div>
+    </div>
+
+    <div class="row">
+      <div class="descrip-lead col-xs-12"> Based on... </div>
+    </div>
+
+    <div class="row stripped-row result-row" ng-repeat='description in ResultTable'>
+      <div class="col-xs-8"> 
+        {{description.text}}
+      </div>
+
+      <div class="col-xs-4 text-right "> 
+        {{description.value}}
+      </div> 
+
+      <div class="col-xs-8 small" ng-if='description.text == "A total mortgage amount of:"'> 
+      Includes mortgage default insurance premium of $9,559.49
+      </div> 
+
+    </div>   
+
+    <div class="row">
+      <div class="col-xs-12">   <hr> </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-8"> 
+        
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Include Mortgage Default Insurance Premiums
+          </label>
+        </div>
+
+
+      </div>
+      <div class="col-xs-8 btn-padding">
+        <input class="btn btn-default btn-infomation" type="button" value="More Info">
+      </div>
+      <div class="col-xs-4 homeIcon-padding">
+        <div class="homeIcon"></div>
+      </div>
+      
+
+    </div>
+
+  </div>  
+
+</div>

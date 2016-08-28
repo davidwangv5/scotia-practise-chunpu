@@ -1,0 +1,131 @@
+/* app css stylesheet */
+body{
+  color: #666666;
+}
+h4{
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 18px;
+  font-weight:normal;
+  color: #D81E05;
+  line-height: 1.33;
+  border-radius: 6px;
+  margin: 0;
+}
+span.title-num{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px #888;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 5px;
+  text-align: center;
+  margin: auto;
+  background-color: #D81E05;
+  color: white;
+}
+hr{
+  border: 1px dashed #E4E4E4;
+  width:95%;
+  }
+
+.container{
+  max-width: 938px;
+}
+.container-fluid{
+  padding: 15px 15px;
+}
+
+#dash-board{
+  border: solid 1px #E4E4E4;
+  background-color: #F9F9F7;
+  margin-bottom: 18px;
+}
+
+#summary-board{
+  border-left: solid 1px #E4E4E4;
+  border-bottom: solid 1px #E4E4E4;
+  border-right: solid 1px #E4E4E4;
+  background-color: white;  
+}
+
+.scotia-color{
+  color: #D81E05;
+}
+
+
+@media (min-width: 992px) {
+    .container-img {
+    width:100%;
+    height:165px;
+    background-image: url("/img/results_image.png")
+    }
+    .container-banner{
+    background: url('/img/Scotia_WhatCanIAfford_spriteboard.png');
+    background-position: 0px -70px;
+    width: 352px;
+    height: 46px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .container-img {
+    height:136px;
+    background-size:cover;
+    background-image: url("/img/results_image_tablet.png")
+    }
+
+    .container-banner{
+    background: url('/img/Scotia_WhatCanIAfford_spriteboard.png');
+    background-position: 0px -225px;
+    width: 295px;
+    height: 46px;
+    zoom:0.95;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-img {
+    height:120px;
+    background-size:cover;
+    background-image: url("/img/results_image_mobilewide.png") ;
+    }
+
+    .container-banner{
+    background: url('/img/Scotia_WhatCanIAfford_spriteboard.png') 0px -300px;
+    height: 53px;
+    width: 100%;
+    background-size: 153% 577px;
+    }
+    .xs-result-push {
+      left: 15%;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .container-img {
+    height:130px;
+    background-size:cover;
+    background-image: url("/img/results_image_mobile.png")
+    }
+    .container-range {
+        display: none !important;
+    }
+
+    .container-banner{
+    background: url('/img/Scotia_WhatCanIAfford_spriteboard.png') 0px -375px;
+    height: 50px;
+    width: 100%;
+    background-size: 214% 577px;
+    }
+    .xs-push {
+        margin-left: 25%;
+    }
+}
+
